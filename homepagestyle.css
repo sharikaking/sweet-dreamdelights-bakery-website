@@ -1,0 +1,15 @@
+ul{
+    margin: 0;
+    padding:0;
+    list-style-type: none;
+}
+
+li{
+    display:inline-block;
+    margin:20px;
+}
+
+a:link {
+color:white;
+text-decoration: none;
+}

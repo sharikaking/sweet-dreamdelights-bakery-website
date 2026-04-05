@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <title>Order Page - Sweet Dream Delights Bakery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="orderstyle.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Place Your Order</h2>
+
+    <form id="orderForm">
+
+        <!-- Full Name -->
+        <input type="text" id="name" placeholder="Full Name">
+        <div id="nameError" class="error"></div>
+
+        <!-- Phone Number -->
+        <input type="text" id="phone" placeholder="Phone Number">
+        <div id="phoneError" class="error"></div>
+
+        <!-- Email -->
+        <input type="email" id="email" placeholder="Email Address">
+        <div id="emailError" class="error"></div>
+
+        <!-- Product -->
+        <select id="product">
+            <option value="">Select Product</option>
+            <option>Bread</option>
+            <option>Pastries</option>
+            <option>Savory Items</option>
+            <option>Eggless Items</option>
+        </select>
+        <div id="productError" class="error"></div>
+
+        <!-- Quantity -->
+        <input type="number" id="quantity" placeholder="Quantity">
+        <div id="quantityError" class="error"></div>
+
+        <!-- Submit -->
+        <button type="submit">Submit Order</button>
+
+        <!-- Success -->
+        <div id="successMsg" class="success">
+            ✅ Order submitted successfully!
+        </div>
+
+    </form>
+</div>
+
+<script src="validateorder.js"></script>
+
+</body>
+</html>
